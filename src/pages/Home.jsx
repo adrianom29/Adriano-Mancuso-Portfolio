@@ -71,7 +71,9 @@ function Home () {
             <Infobubble info = {{
                 type: "project",
                 title: "Get Around Campus (Full Stack Web Application)", 
-                text: "York University navigation application built with data from OpenStreetMap.org (including indoor paths) and Dijkstra's algorithm to compute shortest path between any two locations on campus"
+                text: "York University navigation application built with data from OpenStreetMap.org (including indoor paths) and Dijkstra's algorithm to compute shortest path between any two locations on campus.",
+                url: "https://get-around-campus.onrender.com/",
+                linkText: "Check it out here!"
             }}/>
         </div>
         <div class = "IBgroup">

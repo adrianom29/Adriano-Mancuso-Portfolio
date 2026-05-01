@@ -4,6 +4,7 @@ function Infobubble({info}){
         <div class = "infobubble">
             <h2> {info.title} </h2>
             <p2> {info.text} </p2>
+            <a href={info.url}>{info.linkText}</a>
         </div>
     </>
 }

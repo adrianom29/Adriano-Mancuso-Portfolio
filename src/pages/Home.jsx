@@ -22,11 +22,11 @@ function Home () {
 
         <Space/>
         <h1><center>About Me</center></h1>
-        <p class = "aboutMe">Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Summer 2026 term. I am searching for a role where I can be challenged and 
-            given an opportunity to grow my existing skills as well as create new ones. I am excited to gain valuable industry knowledge from experienced team members. Currently, I am 
-            participating in my second year of my undergraduate degree studying Computer Science at York University. I have a passion for software development and have experience with full stack 
+        <p class = "aboutMe">Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 term. I am searching for a role where I can be challenged and 
+            given an opportunity to grow my existing skills as well as create new ones. I am excited to gain valuable industry knowledge from experienced team members. I have recently 
+            completed my second year of my undergraduate honors degree studying Computer Science at York University. I have a passion for software development and have experience with full stack 
             projects which includes building this very website. Aside from school and programming, I am interested in enjoying a diverse collection of music and movies as well as learning new 
-            technologies and ideas. </p>
+            technologies and ideas. You can find multiple ways to reach me in the Contact Me page in the header.</p>
 
         {/* EDUCATION SECTION */}
 
@@ -37,7 +37,7 @@ function Home () {
             <Infobubble info = {{
                 type: "education",
                 title: "York University, Toronto, ON",
-                text: "Computer Science BA, Honours - Second Year",
+                text: "Computer Science BA, Honours - Second Year - GPA: 6.74/9.00",
             }}/>
         </div>
 
@@ -49,7 +49,7 @@ function Home () {
             <Infobubble info = {{
                 type: "skill", 
                 title: "Programming Languages:",
-                text: "Java, Python, C, HTML/CSS, Javascript"
+                text: "Java, Python, C, HTML/CSS, Javascript, SQL"
             }}/>
             <Infobubble info = {{
                 type: "skill",
@@ -136,9 +136,9 @@ function Home () {
                     <b>Jan 2022 - Jan 2024: </b>
                     <br />
                     <ul class = "bulletPoints">
-                        <li>Developed leadership skills by conducting a class following a lesson plan while maintaining engagement</li>
-                        <li>Clearly communicated learning progress and concerns to students, parents and guardians</li>
-                        <li>Includes work as a member of a team of camp counselors for a summer</li>
+                        <li>Developed leadership skills by conducting classes following lesson plans while maintaining engagement for classes ranging from 1-10 students.</li>
+                        <li>Worked in a team of 5 other counselors to organize group activities while maintaining a safe environment for group sizes of over 20 campers.</li>
+                        <li>Clearly communicated learning progress and concerns to students, parents and guardians.</li>
                     </ul>  
                     </>
                 )

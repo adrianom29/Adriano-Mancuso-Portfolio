@@ -67,11 +67,13 @@ function Home () {
 
         <Space/>
         <h1 class = "titleHome">Projects:</h1>
-        <Infobubble info = {{
-            type: "project",
-            title: "Get Around Campus (Full Stack Web Application)", 
-            text: "York University navigation application built with data from OpenStreetMap.org (including indoor paths) and Dijkstra's algorithm to compute shortest path between any two locations on campus"
-        }}/>
+        <div class = "IBgroup">
+            <Infobubble info = {{
+                type: "project",
+                title: "Get Around Campus (Full Stack Web Application)", 
+                text: "York University navigation application built with data from OpenStreetMap.org (including indoor paths) and Dijkstra's algorithm to compute shortest path between any two locations on campus"
+            }}/>
+        </div>
         <div class = "IBgroup">
             <Infobubble info = {{
                 type: "project",

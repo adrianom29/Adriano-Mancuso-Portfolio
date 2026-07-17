@@ -23,10 +23,10 @@ function Home () {
         <Space/>
         <h1><center>About Me</center></h1>
         <p class = "aboutMe">Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 term. I am searching for a role where I can be challenged and 
-            given an opportunity to grow my existing skills as well as create new ones. I am excited to gain valuable industry knowledge from experienced team members. I have recently 
-            completed my second year of my undergraduate honors degree studying Computer Science at York University. I have a passion for software development and have experience with full stack 
-            projects which includes building this very website. Aside from school and programming, I am interested in enjoying a diverse collection of music and movies as well as learning new 
-            technologies and ideas. You can find multiple ways to reach me in the Contact Me page in the header.</p>
+            given an opportunity to use and grow my existing skills while creating new ones. I am excited to gain valuable industry knowledge from experienced team members. I am beginning my 
+            third year of my undergraduate honors degree studying Computer Science at York University. I have a passion for software development and have experience with full stack projects 
+            which includes building this very website. Aside from school and programming, I am interested in enjoying a diverse collection of music and movies as well as learning new technologies 
+            and ideas. You can find multiple ways to reach me in the Contact Me page in the header.</p>
 
         {/* EDUCATION SECTION */}
 
@@ -39,6 +39,11 @@ function Home () {
                 title: "York University, Toronto, ON",
                 text: "Computer Science BA, Honours - Second Year - GPA: 6.74/9.00",
             }}/>
+            <Infobubble info = {{
+                type: "skill",
+                title: "Notable Coursework:",
+                text: "Advanced Object Oriented Programing, Integral Calculus, Data Structures & Algorithms, Software Tools, Discrete Math"
+            }}/>
         </div>
 
         {/* SKILLS SECTION */}
@@ -49,17 +54,12 @@ function Home () {
             <Infobubble info = {{
                 type: "skill", 
                 title: "Programming Languages:",
-                text: "Java, Python, C, HTML/CSS, Javascript, SQL"
+                text: "Java, Python, JavaScript, TypeScript, C, SQL, HTML/CSS"
             }}/>
             <Infobubble info = {{
                 type: "skill",
-                title: "Notable Courses:",
-                text: "Advanced Object Oriented Programing, Integral Calculus, Data Structures & Algorithms, Software Tools, Discrete Math"
-            }}/>
-            <Infobubble info = {{
-                type: "skill",
-                title: "Developer Tools:",
-                text: "Git/Github, JUnit for Java, React.js, VS Code, Eclipse"
+                title: "Tools and Technologies:",
+                text: "Git, Github, Pandas, Bash, Unix, JUnit, Visual Studio Code, Eclipse IDE, React.js, Flask, AWS, NetworkX, API Development, Prompt Engineering"
             }}/>
         </div>
         
@@ -71,8 +71,8 @@ function Home () {
             <Infobubble info = {{
                 type: "project",
                 title: "Get Around Campus (Full Stack Web Application)", 
-                text: "York University navigation application built with data from OpenStreetMap.org (including indoor paths) and Dijkstra's algorithm to compute shortest path between any two locations on campus.",
-                url: "https://get-around-campus.onrender.com/",
+                text: "Navigation web app for 10 different Ontario Universities. Built with data from OpenStreetMap.org and Dijkstra's algorithm to compute shortest path between any two locations on any selected campus.",
+                url: "https://adrianom29.pythonanywhere.com/",
                 linkText: "Check it out here!"
             }}/>
         </div>

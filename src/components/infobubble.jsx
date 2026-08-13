@@ -4,7 +4,7 @@ function Infobubble({info}){
         <div class = "infobubble">
             <h2> {info.title} </h2>
             <p> {info.text} </p>
-            <a href={info.url}>
+            <a href={info.url} target = "_blank">
                 <br /> 
                 <b>{info.linkText}</b>
             </a>

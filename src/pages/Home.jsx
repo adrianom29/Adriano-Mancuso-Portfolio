@@ -25,8 +25,7 @@ function Home () {
         <p class = "aboutMe">Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 term. I am searching for a role where I can be challenged and 
             given an opportunity to use and grow my existing skills while creating new ones. I am excited to gain valuable industry knowledge from experienced team members. I am beginning my 
             third year of my undergraduate honors degree studying Computer Science at York University. I have a passion for software development and have experience with full stack projects 
-            which includes building this very website. Aside from school and programming, I am interested in enjoying a diverse collection of music and movies as well as learning new technologies 
-            and ideas. You can find multiple ways to reach me in the Contact Me page in the header.</p>
+            which includes building this very website. You can find multiple ways to reach me in the Contact Me page in the header.</p>
 
         {/* EDUCATION SECTION */}
 
@@ -36,13 +35,19 @@ function Home () {
         <div class = "IBgroup">
             <Infobubble info = {{
                 type: "education",
-                title: "York University, Toronto, ON",
-                text: "Computer Science BA, Honours - Second Year - GPA: 6.74/9.00",
+                title: "York University, Toronto, ON:",
+                text: (
+                    <>
+                    <p> Computer Science BA, Honours - Third Year</p>
+                    <p>GPA: 6.80/9.00 ≈ 3.02/4.00</p>
+                    </>
+                )
             }}/>
+
             <Infobubble info = {{
-                type: "skill",
+                type: "education",
                 title: "Notable Coursework:",
-                text: "Advanced Object Oriented Programing, Integral Calculus, Data Structures & Algorithms, Software Tools, Discrete Math"
+                text: "Advanced Object Oriented Programming, Data Structures & Algorithms, Software Tools, Computer Organization, Discrete Mathematics"
             }}/>
         </div>
 
@@ -54,13 +59,25 @@ function Home () {
             <Infobubble info = {{
                 type: "skill", 
                 title: "Programming Languages:",
-                text: "Java, Python, JavaScript, TypeScript, C, SQL, HTML/CSS"
+                text: " Java, Python, JavaScript, TypeScript, HTML/CSS, SQL, C/C++, Bash,  Risc-V Assembly"
+            }}/>
+            <Infobubble info = {{
+                type: "skill", 
+                title: "Frameworks and Libraries:",
+                text: "  React.js, NetworkX, Next.js, Flask, FastAPI, Leaflet.js"
+            }}/>
+        </div>
+        <div class = "IBgroup">
+            <Infobubble info = {{
+                type: "skill",
+                title: "Tools and Platforms:",
+                text: "Git/Github, Pandas, AWS, JUnit, Visual Studio Code, Eclipse IDE, Claude Code"
             }}/>
             <Infobubble info = {{
                 type: "skill",
-                title: "Tools and Technologies:",
-                text: "Git, Github, Pandas, Bash, Unix, JUnit, Visual Studio Code, Eclipse IDE, React.js, Flask, AWS, NetworkX, API Development, Prompt Engineering"
-            }}/>
+                title: "Concepts and Specializations:",
+                text: "API Development, OOP, Full Stack Development, Algorithm Design, UML Design AI/ML, Dijkstra’s Algorithm, Prompt Engineering"
+            }}/>    
         </div>
         
         {/* PROJECTS SECTION */}
@@ -70,24 +87,28 @@ function Home () {
         <div class = "IBgroup">
             <Infobubble info = {{
                 type: "project",
+                title: "AI Music Discovery (Full Stack Web Application) - In Progress...", 
+                text: "Custom built and trained AI model that recommends user new artists based on their top listened to Spotify artists. Built in TypeScript and Python and utilizes Spotify and Last.fm APIs.",
+                url: "https://drive.google.com/file/d/1vDmLv1h6fp1rgUCh6HMPfxigWM2rCL6i/view",
+                linkText: "Check out a demo here!"
+            }}/>
+        </div>
+        
+        <div class = "IBgroup">
+            <Infobubble info = {{
+                type: "project",
                 title: "Get Around Campus (Full Stack Web Application)", 
                 text: "Navigation web app for 10 different Ontario Universities. Built with data from OpenStreetMap.org and Dijkstra's algorithm to compute shortest path between any two locations on any selected campus.",
                 url: "https://adrianom29.pythonanywhere.com/",
                 linkText: "Check it out here!"
             }}/>
-        </div>
-        <div class = "IBgroup">
             <Infobubble info = {{
                 type: "project",
                 title: "Portfolio Website (Full Stack Website)", 
-                text: "This website you are currently on! Implements JavaScript, HTML, and CSS with React.js. Consists of work experience, projects, personal achievements, and various methods of contact."
+                text: "This website you are currently on! Built with JavaScript, HTML, and CSS with React.js. Consists of work experience, projects, personal achievements, and various methods of contact."
             }}/>
 
-            <Infobubble info = {{
-                type: "project",
-                title: "Flying Knife Game (Java Project):", 
-                text: "Navigate a flying knife through an obstacle course, slice the objects for points. Created entirely using Java, implements graphics, object oriented programming, collisions, algorithms, and more."
-            }}/>
+
         </div>
 
         {/* WORK EXPERIENCE */}
@@ -104,9 +125,8 @@ function Home () {
                     <b>Jun 2025 - Present: </b>
                     <br />
                     <ul class = "bulletPoints">    
-                        <li>Provided customer services to community by accurately handling program registrations, payments, and customer inquiries with professionalism</li>
-                        <li>Developed organizational skills by keeping track of customer and program information</li>
-                        <li>Communicated with other members of staff to ensure that daily operations would run without any issue</li>
+                        <li>Processed all transactions, including registrations and payments, with high accuracy using the POS system.</li>
+                        <li>Facilitated weekly program registrations for participants while maintaining accurate customer and program information to ensure smooth operations.</li>
                     </ul> 
                     </>
                 )
@@ -138,7 +158,6 @@ function Home () {
                     <ul class = "bulletPoints">
                         <li>Developed leadership skills by conducting classes following lesson plans while maintaining engagement for classes ranging from 1-10 students.</li>
                         <li>Worked in a team of 5 other counselors to organize group activities while maintaining a safe environment for group sizes of over 20 campers.</li>
-                        <li>Clearly communicated learning progress and concerns to students, parents and guardians.</li>
                     </ul>  
                     </>
                 )

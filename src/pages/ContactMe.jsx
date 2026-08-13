@@ -1,12 +1,17 @@
-import Email from "../images/email.webp"
-import Phone from "../images/phone.png"
-import LinkedIn from "../images/linkedIn.png"
-import github from "../images/github.png"
+import EmailImg from "../images/email.webp"
+import PhoneImg from "../images/phone.png"
+import LinkedInImg from "../images/linkedIn.png"
+import githubImg from "../images/github.png"
+import ResumeImg from "../images/paper.png"
+
 import Space from "../components/Space.jsx"
+import Contact from "../components/contact.jsx"
+
 
 function ContactMe () {
     return <>
         <header> 
+            
             <div class = "headDiv">
                 <a href = "/"> 
                     <button class = "buttons" title = "Go to Home page"> Home </button>
@@ -18,45 +23,50 @@ function ContactMe () {
 
         <br />
         <br />
-        <div class = "CMdiv">
-            <img src = {Email} alt = "Email" class = "CMimage"/>
-            <div>
-                <p class = "titleCM"><b>Personal Email:</b></p>
-                <p> adriano.mancuso2906@gmail.com </p> 
-            </div>
-        </div>
-
-        <Space/>
-
-        <div class = "CMdiv">
-            <img src= {Phone} alt = "Phone" class = "CMimage"/>
-            <div>
-                <p class = "titleCM"> <b>Phone Number:</b></p>
-                <p>(647)-615-4425</p>
-            </div>
-        </div>
         
-        <Space/>
+        <Contact info={{
+            name: "Email",
+            image: EmailImg,
+            text: (
+                <>
+                <p><b>Personal Email:</b></p>
+                <p> adriano.mancuso2906@gmail.com </p> 
+                </>
+            )
+        }}/>
 
-        <div class = "CMdiv">
-            <img src= {LinkedIn} alt = "LinkedIn" class = "CMimage"/>
-            <div>
-                <p class = "titleCM"><b>LinkedIn:</b> </p>
-                <a href="https://www.linkedin.com/in/adriano-mancuso-934156327/" target = "_blank"> Adriano Mancuso</a>
-            </div>
-        </div>
+        <Contact info={{
+            name: "Phone",
+            image: PhoneImg,
+            text: (
+                <>
+                <p> <b>Phone Number:</b></p>
+                <p>(647)-615-4425</p>  
+                </> 
+            )
+        }}/>
 
-        <Space/>
+        <Contact info={{
+            name: "LinkedIn",
+            image: LinkedInImg,
+            link: "https://www.linkedin.com/in/adriano-mancuso-934156327/",
+            text: "Adriano Mancuso"
+        }}/>
 
-        <div class = "CMdiv">
-            <img src= {github} alt = "GitHub" class = "CMimage"/>
-            <div>
-                <p class = "titleCM"><b>GitHub:</b> </p>
-                <a href="https://github.com/adrianom29" target = "_blank"> adrianom29</a>
-            </div>
-        </div>
+        <Contact info={{
+            name: "GitHub",
+            image: githubImg,
+            link: "https://github.com/adrianom29",
+            text: "adrianom29"
+        }}/>
 
-        <Space/>
+        <Contact info={{
+            name: "Resume",
+            image: ResumeImg,
+            link: "https://drive.google.com/file/d/1wmHuambHHoWuclxbYjLAdFyiIaHNMil5/view",
+            text: "Link to Resume"
+        }}/>
+
     </>
 }
 

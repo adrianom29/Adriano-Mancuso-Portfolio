@@ -11,16 +11,14 @@ import Contact from "../components/contact.jsx"
 function ContactMe () {
     return <>
         <header> 
-            
-            <div class = "headDiv">
-                <a href = "/"> 
-                    <button class = "buttons" title = "Go to Home page"> Home </button>
-                </a>
-                <button class = "buttonOnSite" title = "Go to Contact Me page"> Contact Me </button>
-            </div>
+            <a href = "/"> 
+                <button title = "Go to Home page"> Home </button>
+            </a>
+            <button class = "buttonOnSite" title = "Go to Contact Me page"> Contact Me </button>
             <br />
         </header>
 
+        <br />
         <br />
         <br />
         

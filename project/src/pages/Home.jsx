@@ -4,29 +4,27 @@ import Space from "../components/Space.jsx"
 function Home () {
     return <>
         <header> 
-            <div class = "headDiv">
-                <button class = "buttonOnSite" title = "Go to Home page"> Home </button>
-                <a href = "/contact-me"> 
-                    <button class = "buttons" title = "Go to Contact Me page"> Contact Me </button>
-                </a>
-            </div>
+            <button class = "buttonOnSite" title = "Go to Home page"> Home </button>
+            <a href = "/contact-me"> 
+                <button title = "Go to Contact Me page"> Contact Me </button>
+            </a>
             <br />
         </header>
 
         <br />
         <br />
-
-        <h1 class = "hello"><center>I'm Adriano Mancuso</center></h1>
+        <br />
+        <h1 class="centeredHeader">I'm Adriano Mancuso</h1>
 
         {/* ABOUT ME SECTION*/}
 
         <Space/>
-        <h1><center>About Me</center></h1>
-        <p class = "aboutMe">Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 and Winter 2027 terms. I am searching for a role where I can be challenged and 
-            given an opportunity to use and grow my existing skills while creating new ones. I am excited to gain valuable industry knowledge from experienced team members. I am beginning my 
-            third year of my undergraduate honors degree studying Computer Science at York University. I have a passion for software development and have experience with full stack projects 
-            which includes building this very website. You can find multiple ways to reach me in the Contact Me page in the header.</p>
-
+        <h1 class="centeredHeader">About Me</h1>
+        <p class = "aboutMe"><center>Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 and Winter 2027 terms. 
+            I am searching for a role where I can be challenged and given an opportunity to use and grow my existing skills while creating new ones. I am excited 
+            to gain valuable industry knowledge from experienced team members. I am beginning my third year of my undergraduate honors degree studying Computer 
+            Science at York University. I have a passion for software development and have experience with full stack projects which includes building this very 
+            website. You can find multiple ways to reach me in the Contact Me page in the header.</center></p>
         {/* EDUCATION SECTION */}
 
         <Space/>

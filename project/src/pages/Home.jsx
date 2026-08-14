@@ -22,7 +22,7 @@ function Home () {
 
         <Space/>
         <h1><center>About Me</center></h1>
-        <p class = "aboutMe">Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 term. I am searching for a role where I can be challenged and 
+        <p class = "aboutMe">Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 and Winter 2027 terms. I am searching for a role where I can be challenged and 
             given an opportunity to use and grow my existing skills while creating new ones. I am excited to gain valuable industry knowledge from experienced team members. I am beginning my 
             third year of my undergraduate honors degree studying Computer Science at York University. I have a passion for software development and have experience with full stack projects 
             which includes building this very website. You can find multiple ways to reach me in the Contact Me page in the header.</p>

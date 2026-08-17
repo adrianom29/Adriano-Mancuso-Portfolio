@@ -12,58 +12,55 @@ function ContactMe () {
     return <>
         <header> 
             <a href = "/"> 
-                <button title = "Go to Home page"> Home </button>
+                <button title = "Go to Home page">Home</button>
             </a>
-            <button class = "buttonOnSite" title = "Go to Contact Me page"> Contact Me </button>
+            <button class = "buttonOnSite" title = "Go to Contact Me page">Contact Me</button>
             <br />
         </header>
 
         <br />
         <br />
         <br />
+        <div class="contactGroup">
+            <Contact info={{
+                name: "Email",
+                image: EmailImg,
+                text: (
+                    <a href="mailto:adriano.mancuso2906@gmail.com">adriano.mancuso2906@gmail.com</a>
+                )
+            }}/>
+
+            <Contact info={{
+                name: "Phone",
+                image: PhoneImg,
+                text: "(647)-615-4425"
+            }}/>
+
+            <Contact info={{
+                name: "LinkedIn",
+                image: LinkedInImg,
+                link: "https://www.linkedin.com/in/adriano-mancuso-934156327/",
+                text: "Adriano Mancuso"
+            }}/>
+        </div>
+
+        <div class = "contactGroup">
+            <Contact info={{
+                name: "GitHub",
+                image: githubImg,
+                link: "https://github.com/adrianom29",
+                text: "adrianom29"
+            }}/>
+
+            <Contact info={{
+                name: "Resume",
+                image: ResumeImg,
+                link: "https://drive.google.com/file/d/1wmHuambHHoWuclxbYjLAdFyiIaHNMil5/view",
+                text: "Link to Resume"
+            }}/>
+        </div>
         
-        <Contact info={{
-            name: "Email",
-            image: EmailImg,
-            text: (
-                <>
-                <p><b>Personal Email:</b></p>
-                <p> adriano.mancuso2906@gmail.com </p> 
-                </>
-            )
-        }}/>
-
-        <Contact info={{
-            name: "Phone",
-            image: PhoneImg,
-            text: (
-                <>
-                <p> <b>Phone Number:</b></p>
-                <p>(647)-615-4425</p>  
-                </> 
-            )
-        }}/>
-
-        <Contact info={{
-            name: "LinkedIn",
-            image: LinkedInImg,
-            link: "https://www.linkedin.com/in/adriano-mancuso-934156327/",
-            text: "Adriano Mancuso"
-        }}/>
-
-        <Contact info={{
-            name: "GitHub",
-            image: githubImg,
-            link: "https://github.com/adrianom29",
-            text: "adrianom29"
-        }}/>
-
-        <Contact info={{
-            name: "Resume",
-            image: ResumeImg,
-            link: "https://drive.google.com/file/d/1wmHuambHHoWuclxbYjLAdFyiIaHNMil5/view",
-            text: "Link to Resume"
-        }}/>
+        <Space></Space>
 
     </>
 }

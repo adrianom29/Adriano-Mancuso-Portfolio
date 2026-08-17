@@ -1,5 +1,3 @@
-import Space from "../components/Space.jsx"
-
 function Contact({info}){
 
     return <>
@@ -12,7 +10,6 @@ function Contact({info}){
                 <a href={info.link} target = "_blank"> {info.text}</a>
             </div>
         </div>
-        <Space/>
     </>
 }
 

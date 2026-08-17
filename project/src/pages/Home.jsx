@@ -4,9 +4,9 @@ import Space from "../components/Space.jsx"
 function Home () {
     return <>
         <header> 
-            <button class = "buttonOnSite" title = "Go to Home page"> Home </button>
+            <button class = "buttonOnSite" title = "Go to Home page">Home</button>
             <a href = "/contact-me"> 
-                <button title = "Go to Contact Me page"> Contact Me </button>
+                <button title = "Go to Contact Me page">Contact Me</button>
             </a>
             <br />
         </header>
@@ -62,7 +62,7 @@ function Home () {
             <Infobubble info = {{
                 type: "skill", 
                 title: "Frameworks and Libraries:",
-                text: "  React.js, NetworkX, Next.js, Flask, FastAPI, Leaflet.js"
+                text: "React.js, NetworkX, Next.js, Node.js, Flask, FastAPI, Leaflet.js"
             }}/>
         </div>
         <div class = "IBgroup">

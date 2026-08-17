@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 h1{
   margin-left:3rem;
   margin-top: 0.3rem;
@@ -43,14 +47,9 @@ header {
 button{
   color:#6b6b83;
   background-color: #111827;
-  font-size: 1.5rem;
-  border-radius: 16px;
-  border-style: solid;
-  border-color: black;
-  border-width: 0.25rem;
+  font-size: 1.75rem;
+  border-style: hidden;
   padding: 20px 25px;
-  margin: 0.5rem;
-  box-shadow: 0 4px 10px #1118279f;
   transition: transform 0.2s, box-shadow 0.2s;
   text-align: center;
 }
@@ -58,31 +57,32 @@ button{
 button:hover{
   color: white;
   transform: translateY(-3px);
+  text-shadow: 0px 4px 3px #000000;
 }
 
 /* Custom classes */
 
 .titleHome{
-  margin-left: 8rem;
+  margin-left: clamp(1rem, 5vw, 8rem);
   margin-bottom: 1rem;
 }
 
 .buttonOnSite{
   color: white;
-  transform: translateY(-3px);
 }
 
 .aboutMe{
   padding: 1rem;
-  font-size: 1.25rem;
-  margin-left: 6rem;
-  margin-right: 6rem;
+  font-size: clamp(0.9rem, 3vw, 1.25rem);
+  margin-left: clamp(1rem, 8vw, 6rem);
+  margin-right: clamp(1rem, 8vw, 6rem);
   text-align: center;
 }
 
 /* InfoBubble Component */
 
 .infobubble {
+  container-type: inline-size;
   background-color: white;
   border-radius: 16px;
   border-style: solid;
@@ -99,15 +99,19 @@ button:hover{
   box-shadow: 0 8px 20px #111827;
 }
 
+.infobubble h2 {
+  font-size: clamp(1rem, 8cqw, 1.5rem);
+}
+
 .infobubble p {
   color: #374151;
-  font-size: 1.5rem;
+  font-size: clamp(0.85rem, 6cqw, 1.5rem);
 }
 
 .IBgroup{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0rem, 1fr));
-  margin: 0rem 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  margin: 0rem clamp(1rem, 5vw, 10rem);
 }
 
 .bulletPoints{
@@ -117,18 +121,46 @@ button:hover{
 /* Contact Me Page */
 
 .contact{
+  container-type: inline-size;
   display: flex;
+  min-width: 0;
+  max-width: 100%;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  margin-left: 3rem;
+  margin-left: clamp(0rem, 3vw, 3rem);
+  border-radius: 16px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0.1rem;
+  overflow-wrap: break-word;
 }
 
-.contactTitle{
-  font-size: 2rem;
+.contact > div{
+  min-width: 0;
+}
+
+.contact > a{
+  flex-shrink: 0;
+}
+
+.contact p{
+  font-size: clamp(0.65rem, 5cqw, 1rem);
+}
+
+.contact p.contactTitle{
+  margin-top: 2rem;
+  font-size: clamp(0.85rem, 8cqw, 1.75rem);
 }
 
 .contactImage{
-  margin-right: 1rem;
+  margin: clamp(0.25rem, 6cqw, 2rem);
   position: static;
-  height: 5rem;
+  height: clamp(1.75rem, 18cqw, 7rem);
+  max-width: 100%;
+}
+
+.contactGroup{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  margin: 0rem clamp(1rem, 5vw, 10rem);
 }

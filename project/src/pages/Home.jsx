@@ -20,10 +20,10 @@ function Home () {
 
         <Space/>
         <h1 class="centeredHeader">About Me</h1>
-        <p class = "aboutMe"><center>Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Fall 2026 and Winter 2027 terms. 
+        <p class = "aboutMe"><center>Hello! My name is Adriano Mancuso and I am interested in an internship opportunity for the Winter 2027 and Summer 2027 terms. 
             I am searching for a role where I can be challenged and given an opportunity to use and grow my existing skills while creating new ones. I am excited 
-            to gain valuable industry knowledge from experienced team members. I am beginning my third year of my undergraduate honors degree studying Computer 
-            Science at York University. I have a passion for software development and have experience with full stack projects which includes building this very 
+            to gain valuable industry knowledge from experienced team members. I am in my third year of my undergraduate honors degree studying Computer Science
+            at York University. I have a passion for software development and have plenty of experience with full stack projects which includes building this very 
             website. You can find multiple ways to reach me in the Contact Me page in the header.</center></p>
         {/* EDUCATION SECTION */}
 
@@ -57,7 +57,7 @@ function Home () {
             <Infobubble info = {{
                 type: "skill", 
                 title: "Programming Languages:",
-                text: " Java, Python, JavaScript, TypeScript, HTML/CSS, SQL, C/C++, Bash,  Risc-V Assembly"
+                text: "Java, Python, JavaScript, TypeScript, SQL, C, C#, HTML, CSS, Bash, Risc-V Assembly"
             }}/>
             <Infobubble info = {{
                 type: "skill", 
@@ -69,12 +69,12 @@ function Home () {
             <Infobubble info = {{
                 type: "skill",
                 title: "Tools and Platforms:",
-                text: "Git/Github, Pandas, AWS, JUnit, Visual Studio Code, Eclipse IDE, Claude Code"
+                text: "Git, Github, PostgreSQL, JUnit, Visual Studio Code, Eclipse IDE, Claude Code"
             }}/>
             <Infobubble info = {{
                 type: "skill",
                 title: "Concepts and Specializations:",
-                text: "API Development, OOP, Full Stack Development, Algorithm Design, UML Design AI/ML, Dijkstra’s Algorithm, Prompt Engineering"
+                text: "OOP, API Development, Full Stack Development, Software Testing, AlgorithmsDatabase Management, Software Design Patterns, SOLID, UML Design, Prompt Engineering"
             }}/>    
         </div>
         
@@ -85,7 +85,14 @@ function Home () {
         <div class = "IBgroup">
             <Infobubble info = {{
                 type: "project",
-                title: "AI Music Discovery (Full Stack Web Application) - In Progress...", 
+                title: "SmartPrep: Food Waste Reduction Software (UNHack 2026 Hackathon)", 
+                text: "Full stack inventory planning software for small businesses with Python, SQLite, and JavaScript. Utilizes a newsvendor prediction model to recommend an optimized number of menu items to prepare each day, minimizing food waste and maximizing profits.",
+                url: "https://canva.link/0a1fb5ehqb9ekn6",
+                linkText: "Check out the pitch deck here!"
+            }}/>
+            <Infobubble info = {{
+                type: "project",
+                title: "AI Music Discovery (Full Stack Web Application)", 
                 text: "Custom built and trained AI model that recommends user new artists based on their top listened to Spotify artists. Built in TypeScript and Python and utilizes Spotify and Last.fm APIs.",
                 url: "https://drive.google.com/file/d/1vDmLv1h6fp1rgUCh6HMPfxigWM2rCL6i/view",
                 linkText: "Check out a demo here!"
@@ -117,7 +124,7 @@ function Home () {
         <div class = "IBgroup">
             <Infobubble info={{
                 type: "work",
-                title: "Recreation Facility Receptionist | City of Richmond Hill",
+                title: "Recreation Facility Receptionist (City of Richmond Hill)    ",
                 text: (
                     <>
                     <b>Jun 2025 - Present: </b>
@@ -131,7 +138,7 @@ function Home () {
             }}/>
             <Infobubble info={{
                 type: "work",
-                title: "Private Math Tutor | Self Employed",
+                title: "Private Math Tutor (Self Employed)",
                 text: (
                     <>
                     <b>Oct 2024 - Present: </b>
@@ -148,7 +155,7 @@ function Home () {
         <div class= "IBgroup">
             <Infobubble info={{
                 type: "work",
-                title: "Swimming Instructor | City of Vaughan",
+                title: "Swimming Instructor (City of Vaughan)",
                 text: (
                     <>
                     <b>Jan 2022 - Jan 2024: </b>
